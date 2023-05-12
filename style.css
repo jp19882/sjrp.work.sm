@@ -26,7 +26,8 @@ a.dtp {
   width: 7em;
   z-index: 100;
   position: absolute;
-  top: calc(100vh - 4em);
+/*  top: calc(100vh - 4em);*/
+  top: calc(var(--vh, 1vh) * 100 - 4em);
   left: calc(100vw - 9em);
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
@@ -52,7 +53,8 @@ a.dtp:hover {
 
 @media screen and (max-width: 600px) {
   a.dtp {
-    top: calc(100vh - 2.8em);
+/*    top: calc(100vh - 2.8em);*/
+    top: calc(var(--vh, 1vh) * 100 - 2.8em);
     left: calc(100vw - 7.8em);
     margin-bottom: 0.5em;
     margin-right: 0.5em;
@@ -67,7 +69,8 @@ a.contact {
   width: 4.5em;
   z-index: 100;
   position: absolute;
-  top: calc(100vh - 4em);
+/*  top: calc(100vh - 4em);*/
+  top: calc(var(--vh, 1vh) * 100 - 4em);
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 500;
   font-size: 1em;
@@ -93,7 +96,8 @@ a.contact:hover {
 
 @media screen and (max-width: 600px) {
   a.contact {
-    top: calc(100vh - 2.8em);
+/*    top: calc(100vh - 2.8em);*/
+    top: calc(var(--vh, 1vh) * 100 - 2.8em);
     margin-bottom: 0.5em;
     margin-left: 0.5em;
     padding left: 0.5em;
@@ -349,7 +353,8 @@ a.contact:hover {
 }
 .example-tab-panel {
   display: none;
-  max-height: 50vh;
+/*  max-height: 50vh;*/
+  max-height: var(--vh, 1vh) * 50;
   z-index: 1;
   padding: .5em;
   background-color: white;
