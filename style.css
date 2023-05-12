@@ -175,7 +175,6 @@ a.contact:hover {
   font-family: 'Lora', serif;
   font-weight: 100;
   font-size: 1em;
-  font-weight: 100;
   z-index: 100;
   position: absolute;
   top: 2em;
@@ -354,7 +353,7 @@ a.contact:hover {
 .example-tab-panel {
   display: none;
 /*  max-height: 50vh;*/
-  max-height: var(--vh, 1vh) * 50;
+  max-height: calc(var(--vh, 1vh) * 50);
   z-index: 1;
   padding: .5em;
   background-color: white;
